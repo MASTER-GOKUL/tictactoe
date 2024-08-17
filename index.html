@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Slab:wght@100..900&family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&family=Roboto+Slab:wght@100..900&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="flexer">
+        <div class="title-section">
+<div class="circle-image">
+            <img  src="logo.png" ></div>
+        </div>
+        <div class="top-content">
+            <label for="playerXName" class="player-label player-x">Player X Name:</label>
+            <input type="text" id="playerXName" value="Player X">
+            <br>
+            <label for="playerOName" class="player-label player-o">Player O Name:</label>
+            <input type="text" id="playerOName" value="Player O">
+            <br>
+            <label for="gridSize">Enter Grid Size: </label>
+            <select id="gridSize">
+                <option value="2">2 x 2</option>
+                <option value="3" selected>3 x 3</option>
+                <option value="4">4 x 4</option>
+                <option value="5">5 x 5</option>
+                <option value="6">6 x 6</option>
+                <option value="7">7 x 7</option>
+            </select>
+            <br>
+            <button id="startButton">Start Game</button>
+            <button id="restartButton">Restart Game</button>
+        </div>
+    </div>
+
+    <div id="gameContainer" class="game-container">
+        <div  class="player-section">
+            <h1 id="playerXNameDisplay" class="player-x player-name">Player X</h1>
+            <img id="playerX" src="player1fox.png" alt="Player X" class="player-image">
+        </div>
+        <div class ="size"><p id="winCount" class="count">0 vs 0</p></div>
+        <div  class="player-section">
+            <h1 id="playerONameDisplay" class="player-o player-name">Player O</h1>
+            <img id="playerO" src="player2panda.png" alt="Player O" class="player-image">
+        </div>
+    </div>
+<div id="board"></div>
+    <div id="pop" class="popup">
+        <div class="popup-content">
+            <span id="closeP" class="close">&times;</span>
+            <p id="popupText"></p>
+        </div>
+    </div>
+</body>
+</html>

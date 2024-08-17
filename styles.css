@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: #f0f0f0;
+}
+.player-section {
+    text-align: center;
+}
+
+.flexer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+      .circle-image {
+margin-top: 10%;
+            width: 150%;
+            height: 150%;
+            overflow: hidden;
+        }
+
+.player-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.player-x {
+    background: linear-gradient(to bottom, red 30%, pink 65%, white 15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.player-o {
+    background: linear-gradient(to bottom, blue 30%, lightblue 65%, white 15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.player-name {
+    text-algin: center;
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in-out;
+margin-right: 30px;
+}
+
+h1 {
+    margin-left: 25%;
+    color: red;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.title-section {
+    text-align: center;
+}
+
+.top-content {
+    
+    flex-direction: column;
+    align-items: center;
+     justify-content: center;
+    align-items: flex-start;
+margin-left: 20%;
+}
+
+#board {
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+    width: min(80vw, 80vh);
+    height: min(80vw, 80vh);
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+
+#gameContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 20px;
+    background-color: black;
+}
+
+#gridSize {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #e6ffe6; /* Light green background */
+    color: #333; /* Text color */
+}
+
+.size{
+  font-size: 20px;
+    font-family: 'Pacifico', cursive;
+background: linear-gradient(to bottom,  red 30%, blue 75%, white 15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.player-image {
+
+    width: 150px;
+    height: 150px;
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(251, 94, 4);
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 49.5%;
+    border-radius: 20%;
+}
+
+.cell:hover {
+    background-color: #f9f9f9;
+}
+
+#message {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#startButton {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+}
+
+#startButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#restartButton {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+}
+
+#restartButton:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 25%;
+    top: 10%;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    margin: 0% auto; 
+    padding: 20px;
+    color: white;
+    font-size: 70px;
+}
+
+.count {
+    color: white;
+    font-size: 30px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
